@@ -1,0 +1,136 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<head>
+<style>
+    div.a {
+        white-space: nowrap;
+        width: 260px;
+        background-color:mediumseagreen ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border: 1px solid #000000;
+    }
+
+        div.a:hover {
+            overflow: visible;
+        }
+</style>
+</head>
+<body>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6 ">
+            <h2 class="text-dar border-dark">EMPLOYEE LIST</h2>
+            </div>
+                <div class="col-4 text-end">
+                    <a asp-controller="Employee" asp-action="Create_Employee" class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i> &nbsp; Add New Employee
+                    </a>
+                </div>
+        </div>
+    </div>
+    <br /><br />
+    @foreach(var obj in Model)
+    {
+        <div class="card text-white bg-primary mb-3" style="max-width: 30rem;">
+            <div class="card-header">@obj.Employee_Name</div>
+            <div class="card-body">
+                <h4 class="card-title">Employee Details</h4>
+                <label class="text">Id:</label>   <label class="text-end" Name="Id">@obj.Id</label><br>
+                <label>Mail:</label>   <label Name="Mail:">@obj.Mail</label><br>
+                <label>PhoneNumber:</label>   <label Name="PhoneNumber">@obj.PhoneNumber</label><br>
+                <label>Gender:</label>   <label Name="Gender">@obj.Gender</label><br>
+                <label>DOB:</label>   <label Name="DOB">@obj.DOB.ToLongDateString()</label><br>
+                <label>Experience:</label>   <label Name="Experience">@obj.Experience</label><br>
+                <label>Skill:</label>   <label Name="Skill">@obj.Skill</label><br>
+                <label class="align-content-between">Role:</label>   <label class="align-content-between" Name="Role">@obj.Role</label><br>
+                <div class="w-75 btn btn-group">
+                    <a asp-controller="Employee" asp-action="Employee_Edit" asp-route-id="@obj.Id" asp-route-data="@obj.Skill"
+                       class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Popover Title" fdprocessedid="vdq1fau"><i class="bi bi-plus-circle"></i>Add Skill</a>
+                </div>
+            </div>
+        </div>  
+    }
+    
+    @*<table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                
+                <th>
+                    Employee Id
+                </th>
+                <th>
+                    Employee Name
+                </th>
+                <th>
+                    Mail Id
+                </th>
+                <th>
+                    Phone Number
+                </th>
+                <th>
+                    Gender
+                </th>
+                <th>
+                    DOB
+                </th>
+                <th>
+                    Experience
+                </th>
+                <th>
+                    Skills
+                </th>
+                <th>
+                    Role
+                </th>
+                <th>
+                    Update Skill
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+           @* @foreach (var obj in Model)
+            {
+                //@if()
+                <tr>
+                    <td width="10%">
+                        @obj.Id
+                    </td>
+                    <td width="10%">
+                        @obj.Employee_Name
+                    </td>
+                    <td width="30%">
+                        @obj.Mail
+                    </td>
+                    <td width="10%">
+                        @obj.PhoneNumber
+                    </td>
+                    <td width="10%">
+                        @obj.Gender
+                    </td>
+                    <td width="20%">
+                        @obj.DOB.ToLongDateString()
+                    </td>
+                    <td width="30%">
+                        @obj.Experience
+                    </td>
+                    <td width="50%">
+                        @obj.Skill
+                    </td>
+                    <td width="60%">
+                        @obj.Role
+                    </td>
+                    <td>
+                        <div class="w-75 btn btn-group">
+                            <a asp-controller="Employee" asp-action="Employee_Edit" asp-route-id="@obj.Id" asp-route-data="@obj.Skill"
+                               class="btn btn-primary mx-2"><i class="bi bi-plus-circle"></i>Add Skill</a>
+                          
+                        </div>
+                    </td>
+
+                </tr>
+          @*  }*@
+        @*</tbody>*@
+    @*</table>*@
+    </body>

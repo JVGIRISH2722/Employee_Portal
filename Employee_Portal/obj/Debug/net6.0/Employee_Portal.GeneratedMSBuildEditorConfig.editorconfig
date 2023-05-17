@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Employee_Portal
+build_property.RootNamespace = Employee_Portal
+build_property.ProjectDir = D:\Asp.net\Employee_Portal\Employee_Portal\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Asp.net\Employee_Portal\Employee_Portal
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/DeliveryManager/Employee_Details_Role.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlNYW5hZ2VyXEVtcGxveWVlX0RldGFpbHNfUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/DeliveryManager/Employee_Edit_Role.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlNYW5hZ2VyXEVtcGxveWVlX0VkaXRfUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Employee/Create_Employee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlX0VtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Employee/Employee_Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRW1wbG95ZWVfRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Employee/Employee_Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRW1wbG95ZWVfRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Hr/Create_Employee_Hr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJcQ3JlYXRlX0VtcGxveWVlX0hyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Hr/Employee_Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJcRW1wbG95ZWVfRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Tech_Manager/Skill_Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaF9NYW5hZ2VyXFNraWxsX0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-d4ferp9pzb

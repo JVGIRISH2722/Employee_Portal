@@ -1,0 +1,61 @@
+﻿@model Employee
+<form method="post">
+    @*<div asp-validation-summary="All"></div>*@
+    <disable>
+        <div class="mb-3">
+                <label asp-for="Employee_Name"></label>
+        <input asp-for="Employee_Name" class="form-control" readonly/>
+        <span asp-validation-for="Employee_Name" class="text-danger"></span>
+        </div>
+        </disable>
+    <div class="mb-3">
+        <label asp-for="Mail"></label>
+        <input asp-for="Mail" class="form-control" readonly/>
+        <span asp-validation-for="Mail" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" class="form-control" readonly/>
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+    <div class="mb-3">
+        <label asp-for="Gender"></label>
+        <input asp-for="Gender" class="form-control" readonly/>
+        <span asp-validation-for="Gender" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DOB"></label>
+        <input asp-for="DOB" class="form-control" readonly/>
+        <span asp-validation-for="DOB" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Experience"></label>
+        <input asp-for="Experience" class="form-control" readonly/>
+        <span asp-validation-for="Experience" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Skill"></label>
+        <input asp-for="Skill" class="form-control" readonly/>
+        <span asp-validation-for="Skill" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Role"></label>
+        <select asp-for="Role" name="Role" class="form-select" id="exampleSelect1" fdprocessedid="x3t78t">
+            <option value=""></option>
+            <option value="Devops">DevOps</option>
+            <option value="Developer">Developer</option>
+            <option value="QA">QA</option>
+            <option value="Manager">Manager</option>
+            <option value="TeamLeader">TeamLeader</option>
+        </select>
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+    
+    <button type="submit" asp-controller="DeliveryManager" asp-action="Employee_Edit_Role" class="btn btn-primary" style="width:150px">Update</button>
+    <a asp-controller="DeliveryManager" asp-action="Employee_Details_Role" class="btn btn-primary" style="width:150px">
+        Back To List
+    </a>
+
+
+ 
+</form>
