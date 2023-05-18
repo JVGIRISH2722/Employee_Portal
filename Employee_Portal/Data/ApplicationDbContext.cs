@@ -13,11 +13,10 @@ namespace Employee_Portal.Data
             public DbSet<Employee> Employees { get; set; }
             public DbSet<Skill_Id> Skill_Ids { get; set;}
             public DbSet<Skill_Management> Skill_Managements { get; set;}
-            public DbSet<Hr> Hrs { get; set;}
-            public DbSet<TechManager> TechManagement { get; set;}
-            public DbSet<DeliveryManager> DeliverMamagers{ get; set;}
             
-            
-        }
+            public DbSet<Role> Roles { get; set; }
+            public DbSet<Login> Logins { get; set; }
+
+    }
     
 }

@@ -2,7 +2,8 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 <head>
-<style>
+    
+    <style>
     div.a {
         white-space: nowrap;
         width: 260px;
@@ -19,10 +20,16 @@
 </head>
 <body>
 <div class="container p-3">
-    <div class="row pt-4">
+    <div class="row pt-3">
         <div class="col-6 ">
-            <h2 class="text-dar border-dark">EMPLOYEE LIST</h2>
+            <h2 class="bg-light" >EMPLOYEE LIST</h2>
             </div>
+                <div class="col-6 text-end">
+                    <a asp-controller="Hr" asp-action="Create_Employee_Hr" class="btn btn-primary">
+                        <i class="bi bi-plus-circle"></i> &nbsp; Add New Employee
+                    </a>
+                </div>
+            
         </div>
     </div>
     <br /><br />
@@ -39,13 +46,14 @@
                 <label>Experience:</label>   <label Name="Experience">@obj.Experience</label><br>
                 <label>Skill:</label>   <label Name="Skill">@obj.Skill</label><br>
                 <label class="align-content-between">Role:</label>   <label class="align-content-between" Name="Role">@obj.Role</label><br>
-                <div class="w-75 btn btn-group">
-                    <a asp-controller="DeliveryManager" asp-action="Employee_Edit_Role" asp-route-id="@obj.Id" asp-route-data="@obj.Role"
-                       class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Popover Title" fdprocessedid="vdq1fau"><i class="bi bi-plus-circle"></i>Add Role</a>
-                </div>
+                @*<div class="w-75 btn btn-group">
+                    <a asp-controller="Employee" asp-action="Employee_Edit" asp-route-id="@obj.Id" asp-route-data="@obj.Skill"
+                       class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-bs-original-title="Popover Title" fdprocessedid="vdq1fau"><i class="bi bi-plus-circle"></i>Add Skill</a>
+                </div>*@
             </div>
         </div>  
     }
+    
     
     @*<table class="table table-bordered table-striped" style="width:100%">
         <thead>

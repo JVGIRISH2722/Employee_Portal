@@ -1,0 +1,67 @@
+﻿<html>
+<head>
+    <script>
+      var modal = document.getElementById('id01');
+
+        
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6 ">
+            <div class="a">
+                <h2 class="text-dark border-dark">SKILL LIST</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+
+<table class="table table-bordered table-striped" style="width:100%">
+    <thead>
+        <tr>
+
+            <th>
+                Skill Id
+            </th>
+            <th>
+                Skill Name
+            </th>
+            
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            //@if()
+            <tr>
+                <td width="30%">
+                    @obj.Skill_id
+                </td>
+                <td width="30%">
+                    @obj.Skill1
+                </td>
+                
+            </tr>
+            
+        }   
+    </tbody>
+</table>
+    <div class="col-8 text-end">
+        <a asp-controller="Tech_Manager" asp-action="Create_Skill_Tr" class="btn btn-primary" width="75px">
+            <i class="bi bi-plus-circle"></i> &nbsp; Add Skill To List
+        </a>
+        <a asp-controller="Tech_Manager" asp-action="Employee_Details_Tr" class="btn btn-primary" width="75px">
+            Back To Employee List
+        </a>
+    </div>
+</body>
+</html>

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Employee_Portal.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230516172631_InitialCreate1")]
-    partial class InitialCreate1
+    [Migration("20230518062106_InitialCreate4")]
+    partial class InitialCreate4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,6 +68,37 @@ namespace Employee_Portal.Migrations
                     b.ToTable("Employees");
                 });
 
+            modelBuilder.Entity("Employee_Portal.Models.Login", b =>
+                {
+                    b.Property<string>("UserName")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserName");
+
+                    b.ToTable("Logins");
+                });
+
+            modelBuilder.Entity("Employee_Portal.Models.Role", b =>
+                {
+                    b.Property<int>("Role_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Role_Id"));
+
+                    b.Property<string>("Role1")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Role_Id");
+
+                    b.ToTable("Roles");
+                });
+
             modelBuilder.Entity("Employee_Portal.Models.Skill_Id", b =>
                 {
                     b.Property<int>("Skill_id")
@@ -83,6 +114,30 @@ namespace Employee_Portal.Migrations
                     b.HasKey("Skill_id");
 
                     b.ToTable("Skill_Ids");
+                });
+
+            modelBuilder.Entity("Employee_Portal.Models.Skill_Management", b =>
+                {
+                    b.Property<int>("Combined_Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Combined_Id"));
+
+                    b.Property<int>("Employee_Id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Skill_Id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Skill_Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Combined_Id");
+
+                    b.ToTable("Skill_Managements");
                 });
 #pragma warning restore 612, 618
         }

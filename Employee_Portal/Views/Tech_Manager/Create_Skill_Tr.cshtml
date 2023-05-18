@@ -1,0 +1,27 @@
+﻿@model Skill_Id
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<form method="post">
+
+<div class="border p-2 mt-3">
+    <div class="row pb-1">
+        <h2 class="text-primary">Add Skill</h2>
+        
+    </div>
+    <div class="mb-3">
+        <label asp-for="Skill1">SKILL</label>
+        <input asp-for="Skill1" class="form-control" />
+        <span asp-validation-for="Skill1" class="text-danger"></span>
+    </div>
+    </div>
+     <button type="submit" class="btn btn-primary" style="width:150px">Create</button>
+    <a asp-controller="Tech_Manager" asp-action="Skill_Details_Tr" class="btn btn-primary" style="width:150px">
+        Back To Skill List
+    </a>
+
+
+
+</form>

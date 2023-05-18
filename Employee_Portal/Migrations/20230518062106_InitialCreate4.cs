@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Employee_Portal.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate1 : Migration
+    public partial class InitialCreate4 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -32,6 +32,31 @@ namespace Employee_Portal.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Logins",
+                columns: table => new
+                {
+                    UserName = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Logins", x => x.UserName);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Roles",
+                columns: table => new
+                {
+                    Role_Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Role1 = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Roles", x => x.Role_Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Skill_Ids",
                 columns: table => new
                 {
@@ -43,6 +68,21 @@ namespace Employee_Portal.Migrations
                 {
                     table.PrimaryKey("PK_Skill_Ids", x => x.Skill_id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Skill_Managements",
+                columns: table => new
+                {
+                    Combined_Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Skill_Id = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Employee_Id = table.Column<int>(type: "int", nullable: false),
+                    Skill_Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Skill_Managements", x => x.Combined_Id);
+                });
         }
 
         /// <inheritdoc />
@@ -52,7 +92,16 @@ namespace Employee_Portal.Migrations
                 name: "Employees");
 
             migrationBuilder.DropTable(
+                name: "Logins");
+
+            migrationBuilder.DropTable(
+                name: "Roles");
+
+            migrationBuilder.DropTable(
                 name: "Skill_Ids");
+
+            migrationBuilder.DropTable(
+                name: "Skill_Managements");
         }
     }
 }

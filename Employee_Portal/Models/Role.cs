@@ -2,11 +2,11 @@
 
 namespace Employee_Portal.Models
 {
-    public class Hr
+    public class Role
     {
         [Key]
-        public string Hr_UserName { get; set; }
+        public int Role_Id { get; set; }
         [Required]
-        public string Hr_Password { get; set; }
+        public string Role1 { get; set; }
     }
 }

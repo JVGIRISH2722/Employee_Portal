@@ -24,10 +24,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVsaXZlcnlNYW5hZ2VyXEVtcGxveWVlX0VkaXRfUm9sZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Employee/Create_Employee.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlX0VtcGxveWVlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Asp.net/Employee_Portal/Employee_Portal/Views/Employee/Employee_Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRW1wbG95ZWVfRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Asp.net/Employee_Portal/Employee_Portal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,8 +48,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJcQ3JlYXRlX0VtcGxveWVlX0hyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Hr/Employee_Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJcRW1wbG95ZWVfRGV0YWlscy5jc2h0bWw=
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Hr/Employee_Details_Hr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSHJcRW1wbG95ZWVfRGV0YWlsc19Ici5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Asp.net/Employee_Portal/Employee_Portal/Views/Shared/Error.cshtml]
@@ -60,8 +60,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Tech_Manager/Skill_Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaF9NYW5hZ2VyXFNraWxsX0NyZWF0ZS5jc2h0bWw=
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Tech_Manager/Create_Skill_Tr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaF9NYW5hZ2VyXENyZWF0ZV9Ta2lsbF9Uci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Tech_Manager/Employee_Details_Tr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaF9NYW5hZ2VyXEVtcGxveWVlX0RldGFpbHNfVHIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Asp.net/Employee_Portal/Employee_Portal/Views/Tech_Manager/Skill_Details_Tr.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaF9NYW5hZ2VyXFNraWxsX0RldGFpbHNfVHIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Asp.net/Employee_Portal/Employee_Portal/Views/_ViewImports.cshtml]

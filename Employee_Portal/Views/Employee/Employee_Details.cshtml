@@ -23,11 +23,6 @@
         <div class="col-6 ">
             <h2 class="text-dar border-dark">EMPLOYEE LIST</h2>
             </div>
-                <div class="col-4 text-end">
-                    <a asp-controller="Employee" asp-action="Create_Employee" class="btn btn-primary">
-                        <i class="bi bi-plus-circle"></i> &nbsp; Add New Employee
-                    </a>
-                </div>
         </div>
     </div>
     <br /><br />
@@ -37,7 +32,6 @@
             <div class="card-header">@obj.Employee_Name</div>
             <div class="card-body">
                 <h4 class="card-title">Employee Details</h4>
-                <label class="text">Id:</label>   <label class="text-end" Name="Id">@obj.Id</label><br>
                 <label>Mail:</label>   <label Name="Mail:">@obj.Mail</label><br>
                 <label>PhoneNumber:</label>   <label Name="PhoneNumber">@obj.PhoneNumber</label><br>
                 <label>Gender:</label>   <label Name="Gender">@obj.Gender</label><br>
